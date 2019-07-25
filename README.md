@@ -9,4 +9,4 @@
 If you want to submit a pull request, there're some requirements:
 * IDE: Intellij IDEA.
 * Compiler: Java 1.8
-* Do NOT modify `.gradle` `.DS_Store` `.idea` `.iml` files.
+* Do NOT commit `.gradle` `.DS_Store` `.idea` `.iml` files.
