@@ -8,77 +8,11 @@ import java.util.Scanner;
 
 public class autoOperator {
 
-    public List<String> autoGetKeys(){
-        nfcTools nfcOperateTool = new nfcTools();
-        WaterCardUtil waterCardUtil = new WaterCardUtil();
-        List<String> result = waterCardUtil.getKeys(nfcOperateTool.getUid());
-        System.out.println(result);
-        return result;
-    }
-
-    private List<List<List<String>>> readFullWaterCard(String keysFilePath, String outputName) throws IOException {
-        terminal ter = new terminal();
-        readBytes readByte = new readBytes();
-        nfcTools nfc = new nfcTools();
-
-        System.out.println(ter.runCommand("nfc-mfclassic r b " + outputName + " " + keysFilePath));
-        return nfc.formatDump(readByte.readByteFile(outputName));
-    }
-
     public List<List<List<String>>> autoReadFullWaterCard() throws IOException {
-        //实例化工具
-        autoOperator operator = new autoOperator();
-        readBytes bytesOpetater = new readBytes();
-        WaterCardUtil wcutil = new WaterCardUtil();
-        nfcTools nfcTool = new nfcTools();
-        //初始化
-        String dumpStr = wcutil.noneKeyACard;
-        List<String> keys = operator.autoGetKeys();
-        String uid = nfcTool.getUid();
-        //写入 Key A
-        for (int i = 0; i < keys.size(); i++) {
-            dumpStr = dumpStr.replaceFirst("ffffffffffff", keys.get(i));
-            System.out.println(keys.get(i));
-            System.err.println(dumpStr);
-        }
-        //写入 uid
-        dumpStr = dumpStr.replace("thissuid", uid);
-
-        //Debug
-        System.out.println(dumpStr);
-
-        bytesOpetater.writeByteFile("keyDump.mfd",dumpStr);
-        //nfc-mfclassic r b dump.mfd keyDump.mfd
-        return readFullWaterCard("keyDump.mfd", uid + ".mfd");
-    }
-
-    public List<List<List<String>>> makeNewKeysMFD() throws IOException {//需要刷卡
-        //实例化工具
-        autoOperator operator = new autoOperator();
-        readBytes bytesOpetater = new readBytes();
-        WaterCardUtil wcutil = new WaterCardUtil();
-        nfcTools nfcTool = new nfcTools();
-        //初始化
-        String dumpStr = wcutil.noneKeyACard;
-        List<String> keys = operator.autoGetKeys();
-        String uid = nfcTool.getUid();
-        //写入 Key A
-        for (int i = 0; i < keys.size(); i++) {
-            dumpStr = dumpStr.replaceFirst("ffffffffffff", keys.get(i));
-            System.out.println(keys.get(i));
-            System.err.println(dumpStr);
-        }
-        //写入 uid
-        dumpStr = dumpStr.replace("thissuid", uid);
-
-        //Debug
-        System.out.println(dumpStr);
-
-        return nfcTool.formatDump(dumpStr);
-    }
-
-    public String makeAmountData(String integerData){
-        return new python2javaTranslater().p2j("water.py", integerData);
+        WaterCardUtil waterCardUtil = new WaterCardUtil();
+        String uid = waterCardUtil.getUid();
+        waterCardUtil.makeDump(uid);
+        return waterCardUtil.readFullWaterCard("keyDump.mfd", uid + ".mfd");
     }
 
     public void autoAmountData() throws IOException {
@@ -86,14 +20,15 @@ public class autoOperator {
         Scanner sc = new Scanner(System.in);
         readBytes bytesUtil = new readBytes();
         terminal ter = new terminal();
+        WaterCardUtil waterCardUtil = new WaterCardUtil();
 
-        String uid = new nfcTools().getUid();
+        String uid = waterCardUtil.getUid();
 
         for (int i = 0; i < card.size(); i++) {
             System.out.println(card.get(i));
         }
 
-        String moneyData = makeAmountData("200");
+        String moneyData = waterCardUtil.makeAmountData("200");
         int locate = 0;
         String keyword0 = moneyData.substring(locate, locate+6*2).replaceAll(" ", "");
         locate += 6*2;
@@ -129,18 +64,19 @@ public class autoOperator {
     }
 
     public void autoCreateNewWaterCard() throws IOException {
-        List<List<List<String>>> card = makeNewKeysMFD();
+        WaterCardUtil waterCardUtil = new WaterCardUtil();
+        String uid = waterCardUtil.getUid();
+        List<List<List<String>>> card = waterCardUtil.makeNewMFDFormated(uid);
         Scanner sc = new Scanner(System.in);
         readBytes bytesUtil = new readBytes();
         terminal ter = new terminal();
 
-        String uid = new nfcTools().getUid();
 
         for (int i = 0; i < card.size(); i++) {
             System.out.println(card.get(i));
         }
 
-        String moneyData = makeAmountData("200");//default amount 200
+        String moneyData = waterCardUtil.makeAmountData("200");//default amount 200
         int locate = 0;
         String keyword0 = moneyData.substring(locate, locate+6*2).replaceAll(" ", "");
         locate += 6*2;

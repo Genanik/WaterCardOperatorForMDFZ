@@ -9,4 +9,4 @@
 If you want to submit a pull request, there're some requirements:
 * IDE: Intellij IDEA.
 * Compiler: Java 1.8
-* Do NOT commit `.DS_Store` `.idea` `.iml` files to this repository.
+* Do NOT commit `.DS_Store` files to this repository.

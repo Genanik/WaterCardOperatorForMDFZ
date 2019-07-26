@@ -40,6 +40,7 @@ public class readBytes {
         }
         return stringBuilder.toString();
     }
+
     /**
      * Convert hex string to byte[]
      * @param hexString the hex string
@@ -59,6 +60,7 @@ public class readBytes {
         }
         return d;
     }
+
     /**
      * Convert char to byte
      * @param c char
