@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9541c22d-cf81-4465-888e-7d7801190045" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/genanik/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/genanik/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/genanik/util/WaterCardUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/genanik/util/WaterCardUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/genanik/util/autoOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/genanik/util/autoOperator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/genanik/util/nfcTools.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/genanik/util/readBytes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/genanik/util/readBytes.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,16 +26,16 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/genanik/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+            <state relative-caret-position="240">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,20 +43,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/genanik/util/WaterCardUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="112" column="65" selection-start-line="112" selection-start-column="65" selection-end-line="112" selection-end-column="65" />
+            <state relative-caret-position="120">
+              <caret line="12" column="44" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="44" />
               <folding>
-                <element signature="method#getUid#0;class#WaterCardUtil#0" />
-                <element signature="method#getKeys#0;class#WaterCardUtil#0" />
                 <element signature="method#autoGetKeys#0;class#WaterCardUtil#0" />
                 <element signature="method#makeDump#0;class#WaterCardUtil#0" />
-                <element signature="method#makeNewMFDFormated#1;class#WaterCardUtil#0" />
-                <element signature="method#makeNewMFD#1;class#WaterCardUtil#0" />
-                <element signature="method#readDump#0;class#WaterCardUtil#0" />
-                <element signature="method#formatDump#0;class#WaterCardUtil#0" />
                 <element signature="method#makeAmountData#0;class#WaterCardUtil#0" />
                 <element signature="method#readFullWaterCard#0;class#WaterCardUtil#0" />
               </folding>
@@ -68,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/genanik/util/autoOperator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="65" column="60" selection-start-line="65" selection-start-column="60" selection-end-line="65" selection-end-column="60" />
+            <state relative-caret-position="412">
+              <caret line="159" column="63" lean-forward="true" selection-start-line="159" selection-start-column="63" selection-end-line="159" selection-end-column="63" />
               <folding>
                 <element signature="method#autoReadFullWaterCard#0;class#autoOperator#0" />
                 <element signature="method#autoAmountData#0;class#autoOperator#0" />
@@ -83,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/src/org/genanik/util/readBytes.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
-              <caret line="66" column="19" lean-forward="true" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
+              <caret line="66" column="19" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
               <folding>
                 <element signature="method#writeByteFile#0;class#readBytes#0" />
                 <element signature="method#readByteFile#0;class#readBytes#0" />
@@ -108,12 +101,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/org/genanik/Main.java" />
         <option value="$PROJECT_DIR$/src/org/genanik/util/nfcTools.java" />
         <option value="$PROJECT_DIR$/src/org/genanik/util/readBytes.java" />
-        <option value="$PROJECT_DIR$/src/org/genanik/util/autoOperator.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/org/genanik/util/WaterCardUtil.java" />
+        <option value="$PROJECT_DIR$/src/org/genanik/util/autoOperator.java" />
+        <option value="$PROJECT_DIR$/src/org/genanik/Main.java" />
       </list>
     </option>
   </component>
@@ -167,11 +160,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunDashboard">
@@ -185,6 +179,26 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.genanik.Main" />
+      <module name="WaterCardOperatorForMDFZ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.genanik.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -212,16 +226,17 @@
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49946523" visible="true" weight="0.25274727" />
-      <window_info id="Structure" order="1" sideWeight="0.5005348" side_tool="true" visible="true" weight="0.25274727" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4983957" visible="true" weight="0.25579977" />
+      <window_info id="Structure" order="1" sideWeight="0.50160426" side_tool="true" visible="true" weight="0.25579977" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.5005348" side_tool="true" weight="0.25274727" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32941177" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -247,46 +262,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/genanik/util/nfcTools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/genanik/util/nfcTools.java" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/genanik/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/genanik/util/autoOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="65" column="60" selection-start-line="65" selection-start-column="60" selection-end-line="65" selection-end-column="60" />
-          <folding>
-            <element signature="method#autoReadFullWaterCard#0;class#autoOperator#0" />
-            <element signature="method#autoAmountData#0;class#autoOperator#0" />
-            <element signature="method#autoCreateNewWaterCard#0;class#autoOperator#0" />
-          </folding>
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/genanik/util/readBytes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="66" column="19" lean-forward="true" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
+          <caret line="66" column="19" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
           <folding>
             <element signature="method#writeByteFile#0;class#readBytes#0" />
             <element signature="method#readByteFile#0;class#readBytes#0" />
@@ -298,19 +285,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/genanik/util/WaterCardUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="112" column="65" selection-start-line="112" selection-start-column="65" selection-end-line="112" selection-end-column="65" />
+        <state relative-caret-position="120">
+          <caret line="12" column="44" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="44" />
           <folding>
-            <element signature="method#getUid#0;class#WaterCardUtil#0" />
-            <element signature="method#getKeys#0;class#WaterCardUtil#0" />
             <element signature="method#autoGetKeys#0;class#WaterCardUtil#0" />
             <element signature="method#makeDump#0;class#WaterCardUtil#0" />
-            <element signature="method#makeNewMFDFormated#1;class#WaterCardUtil#0" />
-            <element signature="method#makeNewMFD#1;class#WaterCardUtil#0" />
-            <element signature="method#readDump#0;class#WaterCardUtil#0" />
-            <element signature="method#formatDump#0;class#WaterCardUtil#0" />
             <element signature="method#makeAmountData#0;class#WaterCardUtil#0" />
             <element signature="method#readFullWaterCard#0;class#WaterCardUtil#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/genanik/util/autoOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="159" column="63" lean-forward="true" selection-start-line="159" selection-start-column="63" selection-end-line="159" selection-end-column="63" />
+          <folding>
+            <element signature="method#autoReadFullWaterCard#0;class#autoOperator#0" />
+            <element signature="method#autoAmountData#0;class#autoOperator#0" />
+            <element signature="method#autoCreateNewWaterCard#0;class#autoOperator#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/genanik/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
