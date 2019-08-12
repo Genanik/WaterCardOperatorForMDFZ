@@ -161,4 +161,18 @@ public class autoOperator {
         bytesUtil.writeByteFile(uid + "BlankCardKeys.mfd", waterCardUtil.defaultKeyCard.replace("thissuid", uid));
         System.out.println(ter.runCommand("nfc-mfclassic w b " + uid + "NewCard.mfd" + " " + uid + "BlankCardKeys.mfd"));
     }
+
+    public Boolean verNFCDevices(){
+        terminal ter = new terminal();
+        String rawText = ter.runCommand("nfc-list");
+        String[] textList = rawText.split("\n");
+        if (textList.length == 1){
+            return false;
+        }else if (textList.length > 2){
+            return false;
+        }else {
+            return true;
+        }
+
+    }
 }

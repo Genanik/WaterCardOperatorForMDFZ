@@ -77,14 +77,14 @@ public class WaterCardUtil {
         //写入 Key A
         for (int i = 0; i < keys.size(); i++) {
             dumpStr = dumpStr.replaceFirst("ffffffffffff", keys.get(i));
-            System.out.println(keys.get(i));
-            System.err.println(dumpStr);
+            System.out.println("injured " + keys.get(i));
+            //System.err.println(dumpStr);
         }
         //写入 uid
         dumpStr = dumpStr.replace("thissuid", uid);
-
+        System.out.println("injured uid");
         //Debug
-        System.out.println(dumpStr);
+        //System.out.println(dumpStr);
 
         return dumpStr;
     }

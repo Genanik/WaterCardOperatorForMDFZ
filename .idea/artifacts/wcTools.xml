@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="wcTools">
+    <output-path>$PROJECT_DIR$/out/artifacts/wcTools</output-path>
+    <root id="archive" name="wcTools.jar">
+      <element id="module-output" name="WaterCardOperatorForMDFZ" />
+    </root>
+  </artifact>
+</component>
